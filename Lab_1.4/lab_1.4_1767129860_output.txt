@@ -1,0 +1,9 @@
+### 4. Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี)
+
+**Input (Test Case 1):**
+
+5
+
+**Program Output:**
+
+15

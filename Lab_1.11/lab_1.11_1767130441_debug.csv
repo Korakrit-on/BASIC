@@ -1,0 +1,17 @@
+## 3. Debug Sheet (CSV format)
+
+**Test Case Used:** Input 500.00, 3 (Test Case 2)
+
+
+Line,Code Snippet,price_before_vat,categoryCode,totalBill,vatAmount,vatRate,isValid,Condition/Comment,Output
+3-7,Variable initialization,?,?,0.0,0.0,?,1,,
+10,scanf("%f %d", ...),500.00,3,0.0,0.0,0.0,1,Input successful,
+16,switch (categoryCode),500.00,3,0.0,0.0,0.0,1,categoryCode = 3,
+24,case 3:,500.00,3,0.0,0.0,0.0,1,Execute Case 3,
+25,vatRate = 0.15;,500.00,3,0.0,0.0,0.15,1,,
+30,if (isValid),500.00,3,0.0,0.0,0.15,1,isValid is 1 (True),
+33,totalBill = price * (1.0 + vatRate);,500.00,3,575.00,0.0,0.15,1,Calculation: 500 * 1.15,
+37,vatAmount = totalBill - price;,500.00,3,575.00,75.00,0.15,1,Calculation: 575.00 - 500.00,
+39,printf("VAT Amount: %.2f\n", vatAmount);,500.00,3,575.00,75.00,0.15,1,Output line 1,VAT Amount: 75.00
+40,printf("Total Price: %.2f\n", totalBill);,500.00,3,575.00,75.00,0.15,1,Output line 2,Total Price: 575.00
+46,return 0;,500.00,3,575.00,75.00,0.15,1,Program ends,

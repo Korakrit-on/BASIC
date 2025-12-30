@@ -1,0 +1,13 @@
+### 3. Debug Sheet (CSV format)
+
+
+Step_ID,Function/Module,Variable_Name,Initial_Value,Operation,Result/Final_Value,Notes
+1,WebsiteStatus.__init__,self.status_message,N/A,Assignment,"เว็บไซต์กำลังอยู่ในระหว่างปรับปรุง แล้วเราจะได้พบกันใหม่เร็วๆ นี้",Input message stored
+2,WebsiteStatus.__init__,self.copyright,N/A,Assignment,"Copyright © 2025 Thailand Fx Warrior",Copyright data stored
+3,display_status,SEPARATOR,N/A,Define,"==================================================",50 equal signs
+4,display_status,Output Line 2,self.skip_to_content,Print F-string,"| Skip to content                                  |",Header alignment check
+5,display_status,Output Line 4,self.title,Print F-string,"| สถานะ: บทความทั่วไป สำหรับ นศ.",Display site purpose
+6,display_status,Output Line 6,self.status_message,Print,"เว็บไซต์กำลังอยู่ในระหว่างปรับปรุง แล้วเราจะได้พบกันใหม่เร็วๆ นี้",Main status displayed
+7,display_status,Output Line 7,self.signer,Print F-string,"– admin",Signature line
+8,display_status,Output Line 9,self.call_to_action,Print,"ติดตามเรา",Call to action displayed
+9,display_status,Output Line 11,self.copyright,Print,"Copyright © 2025 Thailand Fx Warrior",Legal footer

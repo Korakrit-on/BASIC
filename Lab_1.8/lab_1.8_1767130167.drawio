@@ -1,0 +1,147 @@
+## 2. XML Code สำหรับ Draw.io (Flowchart)
+
+
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- 1. Start -->
+    <mxCell id="2" value="START" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="270" y="20" width="100" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- 2. Input -->
+    <mxCell id="3" value="Input dayCode, hour" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="240" y="100" width="160" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connection Start -> Input -->
+    <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="2" target="3" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- 4. Decision: Check dayCode (Switch) -->
+    <mxCell id="5" value="dayCode?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="270" y="190" width="100" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connection Input -> Decision -->
+    <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="3" target="5" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- PATH 1: dayCode 1-5 (Workday Logic) -->
+    <mxCell id="7" value="1-5 (Mon-Fri)" style="endArrow=classic;html=1;exitX=0;exitY=0.5;" parent="1" source="5" target="8" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="160" y="220"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Sub-Decision: Check Hour (Workday) -->
+    <mxCell id="8" value="8 &lt;= hour &lt;= 17?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="100" y="300" width="120" height="70" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connection 1-5 Path to Sub-Decision -->
+    <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="160" y="220" as="sourcePoint"/>
+        <mxPoint x="160" y="300" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Output A: System Running (YES) -->
+    <mxCell id="10" value="Output: System Running (Workday)" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="20" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connection YES to Output A -->
+    <mxCell id="11" value="Yes" style="endArrow=classic;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="8" target="10" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="100" y="410"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Output B: System Idle (NO) -->
+    <mxCell id="12" value="Output: System Idle (Off-hours)" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="200" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connection NO to Output B -->
+    <mxCell id="13" value="No" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="8" target="12" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="280" y="410"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- PATH 2: dayCode 6-7 (Weekend) -->
+    <mxCell id="14" value="6 or 7 (Weekend)" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="5" target="15" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    
+    <!-- Output C: Weekend Relax Mode -->
+    <mxCell id="15" value="Output: Weekend Relax Mode" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="240" y="380" width="160" height="60" as="geometry"/>
+    </mxCell>
+    
+    <!-- PATH 3: Default (Invalid) -->
+    <mxCell id="16" value="Other" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="5" target="17" edge="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="480" y="220"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- Output D: Invalid Day Code -->
+    <mxCell id="17" value="Output: Invalid Day Code" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="400" y="380" width="160" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- 6. End Node -->
+    <mxCell id="18" value="END" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+      <mxGeometry x="270" y="580" width="100" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connections to End -->
+    <mxCell id="19" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="90" y="510" as="sourcePoint"/>
+        <mxPoint x="320" y="580" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="90" y="550"/>
+          <mxPoint x="320" y="550"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="20" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <mxPoint x="280" y="510" as="sourcePoint"/>
+        <mxPoint x="320" y="580" as="targetPoint"/>
+        <Array as="points">
+          <mxPoint x="280" y="550"/>
+          <mxPoint x="320" y="550"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="21" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="15" target="18" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="22" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="17" target="18" edge="1">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="480" y="550"/>
+          <mxPoint x="320" y="550"/>
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    
+  </root>
+</mxGraphModel>

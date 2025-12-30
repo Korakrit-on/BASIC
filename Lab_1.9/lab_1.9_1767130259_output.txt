@@ -1,0 +1,12 @@
+ส่วนที่ 4: Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี)
+
+ใช้ Test Case 4:
+Input
+
+4
+10.0
+
+
+Program Output
+
+Invalid Zone Code

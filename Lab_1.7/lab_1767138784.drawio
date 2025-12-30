@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="774" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="Start" style="shape=ellipse;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="50" y="50" width="60" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="Read Input" style="shape=rectangle;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="150" y="50" width="100" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="Customer Type 1" style="shape=rhombus;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="50" y="150" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="Customer Type 2" style="shape=rhombus;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="200" y="150" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="Invalid Customer Type" style="shape=ellipse;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="350" y="150" width="120" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="Calculate Bill" style="shape=rectangle;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="50" y="250" width="100" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="Print Output" style="shape=rectangle;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="200" y="250" width="100" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="9" value="End" style="shape=ellipse;fillColor=#ffffff;" parent="1" vertex="1">
+      <mxGeometry x="350" y="250" width="60" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="10" parent="1" source="2" target="3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" parent="1" source="3" target="4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" parent="1" source="3" target="5" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" parent="1" source="3" target="6" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" parent="1" source="4" target="7" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="15" parent="1" source="5" target="7" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="16" parent="1" source="7" target="8" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="17" parent="1" source="8" target="9" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

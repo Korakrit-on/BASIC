@@ -1,0 +1,12 @@
+### 4. Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี)
+
+**Using Test Case 1:**
+Input:
+
+1
+15.0
+
+
+Program Output:
+
+349.00

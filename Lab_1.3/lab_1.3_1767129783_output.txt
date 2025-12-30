@@ -1,0 +1,12 @@
+### 4. Program Output
+
+(ใช้ Test Case 4: Input 10, 5, 5)
+
+Input:
+10
+5
+5
+
+Output:
+
+Invalid Operation

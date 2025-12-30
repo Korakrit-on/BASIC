@@ -1,0 +1,7 @@
+For debugging purposes, if we were to log the extraction process in a CSV file, it might contain the following information:
+
+"Step","Description","Output"
+"1","Input Text","Successful"
+"2","Extract Copyright Year","2025"
+"3","Extract Website Status","The website is under maintenance."
+"4","Output Information","Successful"

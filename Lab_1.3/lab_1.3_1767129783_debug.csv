@@ -1,0 +1,13 @@
+### 3. Debug Sheet (CSV format)
+
+(ใช้ Test Case 3: Input 15, 4, 4. Output 3)
+
+
+Step,Line No.,Variable: num1,Variable: num2,Variable: operationCode,Variable: result,Condition/Action,Output,Notes
+1,main(),?,?,?,?,Program Start,,
+2,scanf(),15,4,4,?,Input read successfully,,
+3,switch,15,4,4,?,operationCode is 4,,Matches case 4
+4,case 4,15,4,4,3,result = 15 / 4 = 3 (Integer division),,
+5,printf(),15,4,4,3,Print result,3,
+6,break,15,4,4,3,Exit switch,,
+7,return 0,15,4,4,3,Program End,,

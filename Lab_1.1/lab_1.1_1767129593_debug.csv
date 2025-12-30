@@ -1,0 +1,27 @@
+3. Debug Sheet (CSV format)
+
+ใช้ Test Case 2: Input N = 5
+
+
+Step/Line,N,i,Condition Check (N > 0),Condition Check (i < N),Output,Notes
+1. Start,?,?,?,,
+2. Input N,5,?,?,?,User enters 5
+3. Check N > 0,5,?,True,,
+4. Initialize i,5,0,,,
+5. Loop Check,5,0,,True,
+6. Print,5,0,,,Hello Loop!,
+7. Increment i,5,1,,,
+8. Loop Check,5,1,,True,
+9. Print,5,1,,,Hello Loop!,
+10. Increment i,5,2,,,
+11. Loop Check,5,2,,True,
+12. Print,5,2,,,Hello Loop!,
+13. Increment i,5,3,,,
+14. Loop Check,5,3,,True,
+15. Print,5,3,,,Hello Loop!,
+16. Increment i,5,4,,,
+17. Loop Check,5,4,,True,
+18. Print,5,4,,,Hello Loop!,
+19. Increment i,5,5,,,
+20. Loop Check,5,5,,False,
+21. Exit,5,5,,,End of program

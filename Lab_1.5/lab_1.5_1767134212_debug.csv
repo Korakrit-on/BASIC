@@ -1,0 +1,21 @@
+sv
+Step,Action,number,evenSum,oddSum,Condition (number != 0),Notes
+0,Initialization,?,0,0,-,
+1,Scan (Initial read),1,0,0,True,TC 1 Input: 1 2 3 4 5 0
+2,Loop Entry,1,0,0,True,
+3,Process (1 % 2 != 0),1,0,1,-,oddSum += 1
+4,Scan (Next read),2,0,1,True,
+5,Loop Entry,2,0,1,True,
+6,Process (2 % 2 == 0),2,2,1,-,evenSum += 2
+7,Scan (Next read),3,2,1,True,
+8,Loop Entry,3,2,1,True,
+9,Process (3 % 2 != 0),3,2,4,-,oddSum += 3 (1+3=4)
+10,Scan (Next read),4,2,4,True,
+11,Loop Entry,4,2,4,True,
+12,Process (4 % 2 == 0),4,6,4,-,evenSum += 4 (2+4=6)
+13,Scan (Next read),5,6,4,True,
+14,Loop Entry,5,6,4,True,
+15,Process (5 % 2 != 0),5,6,9,-,oddSum += 5 (4+5=9)
+16,Scan (Next read),0,6,9,False,
+17,Loop Exit,0,6,9,False,
+18,Print Output,-,6,9,-,Even Sum: 6, Odd Sum: 9

@@ -1,0 +1,9 @@
+Since the problem doesn't explicitly require an XML flowchart and given the nature of the task, creating a detailed XML flowchart might not be directly applicable. However, if we were to represent the process of extracting information from the text in a simplified XML format, it might look something like this:
+
+```xml
+<process>
+    <step>Input Text</step>
+    <step>Extract Copyright Year</step>
+    <step>Extract Website Status</step>
+    <step>Output Information</step>
+</process>

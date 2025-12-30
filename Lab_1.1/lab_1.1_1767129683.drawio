@@ -1,0 +1,145 @@
+### 2. XML Code สำหรับ Draw.io (Flowchart)
+
+
+<mxfile host="app.diagrams.net" modified="2024-05-24T12:00:00.000Z" agent="Mozilla/5.0" etag="sample-etag" version="24.4.16">
+  <diagram id="flowchart_lab1.1" name="Page-1">
+    <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Start -->
+        <mxCell id="2" value="START" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <!-- Input N -->
+        <mxCell id="3" value="Input N" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="345" y="110" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="80" as="sourcePoint" />
+            <mxPoint x="410" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Decision N <= 0? -->
+        <mxCell id="5" value="N &lt;= 0 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="3" target="5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="150" as="sourcePoint" />
+            <mxPoint x="410" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- YES path: Output Error -->
+        <mxCell id="7" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;" parent="5" vertex="1" connectable="0">
+          <mxGeometry x="0.1417" y="-1" relative="1" as="geometry">
+            <mxPoint x="-29" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="Output &quot;Error&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="190" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="5" target="8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="210" as="sourcePoint" />
+            <mxPoint x="320" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- NO path: Initialization -->
+        <mxCell id="10" value="No" style="edgeLabel;resizable=0;html=1;align=center;" parent="5" vertex="1" connectable="0">
+          <mxGeometry x="0.1417" y="-1" relative="1" as="geometry">
+            <mxPoint x="31" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="i = 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="5" target="11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="410" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Loop Condition i < N? -->
+        <mxCell id="13" value="i &lt; N ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="11" target="13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="330" as="sourcePoint" />
+            <mxPoint x="410" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Loop YES path -->
+        <mxCell id="15" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;" parent="13" vertex="1" connectable="0">
+          <mxGeometry x="0.1417" y="-1" relative="1" as="geometry">
+            <mxPoint x="31" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Output &quot;Hello Loop!&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="380" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="13" target="16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="510" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Increment i -->
+        <mxCell id="18" value="i = i + 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="460" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="16" target="18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="575" y="420" as="sourcePoint" />
+            <mxPoint x="575" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Loop Back -->
+        <mxCell id="20" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="18" target="13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="575" y="500" as="sourcePoint" />
+            <mxPoint x="575" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="540" />
+              <mxPoint x="320" y="540" />
+              <mxPoint x="320" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Loop NO path -->
+        <mxCell id="21" value="No" style="edgeLabel;resizable=0;html=1;align=center;" parent="13" vertex="1" connectable="0">
+          <mxGeometry x="0.1417" y="-1" relative="1" as="geometry">
+            <mxPoint x="-29" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Stop -->
+        <mxCell id="22" value="END" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="13" target="22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="430" as="sourcePoint" />
+            <mxPoint x="410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=classic;html=1;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" parent="1" source="8" target="22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="255" y="230" as="sourcePoint" />
+            <mxPoint x="410" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="255" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

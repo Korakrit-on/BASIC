@@ -1,0 +1,7 @@
+```csv
+customerType,consumption_kWh,totalBill
+1,50,150.00
+1,150,600.00
+2,600,3900.00
+3,100,Invalid Customer Type
+```

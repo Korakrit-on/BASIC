@@ -1,0 +1,7 @@
+Odd Sum: 9
+Even Sum: 60
+Odd Sum: -1
+Even Sum: 0
+Odd Sum: 55
+Even Sum: 0
+Odd Sum: 99

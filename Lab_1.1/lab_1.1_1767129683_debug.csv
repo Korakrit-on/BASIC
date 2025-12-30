@@ -1,0 +1,27 @@
+### 3. Debug Sheet (CSV format)
+
+(กรณีที่ N = 5)
+
+
+Line #,Code Line,N,i,Condition (i < N),Output
+1,int N, i;,?,?,,
+2,if (scanf("%d", &N) != 1),5,?,,
+3,if (N <= 0),5,?,"False",
+4,for (i = 0; i < N; i++) (Init),5,0,,
+5,i < N (0 < 5),5,0,"True",
+6,printf("Hello Loop!\n");,5,0,,Hello Loop!
+7,i++;,5,1,,
+8,i < N (1 < 5),5,1,"True",
+9,printf("Hello Loop!\n");,5,1,,Hello Loop!
+10,i++;,5,2,,
+11,i < N (2 < 5),5,2,"True",
+12,printf("Hello Loop!\n");,5,2,,Hello Loop!
+13,i++;,5,3,,
+14,i < N (3 < 5),5,3,"True",
+15,printf("Hello Loop!\n");,5,3,,Hello Loop!
+16,i++;,5,4,,
+17,i < N (4 < 5),5,4,"True",
+18,printf("Hello Loop!\n");,5,4,,Hello Loop!
+19,i++;,5,5,,
+20,i < N (5 < 5),5,5,"False",
+21,return 0;,5,5,,

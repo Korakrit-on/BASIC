@@ -1,0 +1,14 @@
+## 4. Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี)
+
+**Test Case 1**
+
+Input:
+
+1000.00
+1
+
+
+Program Output:
+
+VAT Amount: 70.00
+Total Price: 1070.00

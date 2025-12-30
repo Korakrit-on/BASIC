@@ -1,0 +1,13 @@
+Step,Variable,Value
+1,customerType,1
+2,consumption_kWh,50.0
+3,totalBill,0.0
+4,customerType,1
+5,consumption_kWh,150.0
+6,totalBill,0.0
+7,customerType,2
+8,consumption_kWh,600.0
+9,totalBill,0.0
+10,customerType,3
+11,consumption_kWh,100.0
+12,totalBill,0.0

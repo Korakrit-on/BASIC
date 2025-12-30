@@ -1,0 +1,22 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<flowchart>
+    <start>Start</start>
+    <input>Read customerType and consumption_kWh</input>
+    <decision>Is customerType 1 or 2?</decision>
+    <if true>
+        <decision>Is consumption_kWh <= 100 (for customerType 1) or <= 500 (for customerType 2)?</decision>
+        <if true>
+            <process>Calculate totalBill based on consumption_kWh and customerType</process>
+        </if true>
+        <if false>
+            <process>Calculate totalBill based on consumption_kWh and customerType</process>
+        </if false>
+    </if true>
+    <if false>
+        <output>Print "Invalid Customer Type"</output>
+    </if false>
+    <output>Print totalBill</output>
+    <end>End</end>
+</flowchart>
+```

@@ -1,0 +1,8 @@
+4. Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี)
+
+Input: 3 (Test Case 1)
+
+
+Hello Loop!
+Hello Loop!
+Hello Loop!

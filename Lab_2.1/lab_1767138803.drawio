@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="Website" style="shape=ellipse" parent="1"/>
+    <mxCell id="3" value="Admin" style="shape=ellipse" parent="1"/>
+    <mxCell id="4" value="Copyright" style="shape=ellipse" parent="1"/>
+    <mxCell id="5" value="2025" style="shape=rectangle" parent="4"/>
+    <mxCell id="6" value="Thailand Fx Warrior" style="shape=rectangle" parent="2"/>
+    <mxCell id="7" value="เว็บไซต์กำลังอยู่ในระหว่างปรับปรุง แล้วเราจะได้พบกันใหม่เร็วๆ นี้" style="shape=rectangle" parent="3"/>
+  </root>
+</mxGraphModel>

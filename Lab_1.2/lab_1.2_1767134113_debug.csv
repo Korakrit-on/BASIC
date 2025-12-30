@@ -1,0 +1,6 @@
+Line No.,score,Condition,Output,Notes
+7,,Input (scanf %d),,score = 70
+10,70,if (70 >= 80) -> False,,
+11,70,else if (70 >= 70) -> True,,
+12,70,printf("Grade B"),Grade B,
+20,70,return 0,,End Program

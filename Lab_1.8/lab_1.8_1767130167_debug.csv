@@ -1,0 +1,11 @@
+## 3. Debug Sheet (CSV format)
+
+
+Step,dayCode,hour,Condition (dayCode),Condition (hour 8-17),Output,Notes
+1,2,10,"Case 1-5 (Workday)",TRUE (10 is in [8, 17]),System Running (Workday),Test Case 1
+2,1,20,"Case 1-5 (Workday)",FALSE (20 > 17),System Idle (Off-hours),Test Case 2
+3,6,15,"Case 6-7 (Weekend)",N/A,Weekend Relax Mode,Test Case 3
+4,8,12,Default,N/A,Invalid Day Code,Test Case 4
+5,5,8,"Case 1-5 (Fri)",TRUE (Boundary start),System Running (Workday),Boundary Check
+6,5,18,"Case 1-5 (Fri)",FALSE (Boundary end + 1),System Idle (Off-hours),Boundary Check
+7,7,0,"Case 6-7 (Sun)",N/A,Weekend Relax Mode,Weekend check

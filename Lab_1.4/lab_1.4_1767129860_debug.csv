@@ -1,0 +1,14 @@
+### 3. Debug Sheet (CSV format)
+
+**Test Case: Input N = 5**
+
+| Step | N | sum | i | Condition (i <= N) | sum = sum + i | i = i + 1 | Output |
+|---|---|---|---|---|---|---|---|
+| Initialization | 5 | 0 | ? | | | | |
+| Loop Start (i=1) | 5 | 0 | 1 | T (1 <= 5) | 1 | 2 | |
+| Loop 2 | 5 | 1 | 2 | T (2 <= 5) | 3 | 3 | |
+| Loop 3 | 5 | 3 | 3 | T (3 <= 5) | 6 | 4 | |
+| Loop 4 | 5 | 6 | 4 | T (4 <= 5) | 10 | 5 | |
+| Loop 5 | 5 | 10 | 5 | T (5 <= 5) | 15 | 6 | |
+| Loop End | 5 | 15 | 6 | F (6 <= 5) | | | |
+| Print Result | 5 | 15 | 6 | | | | 15 |

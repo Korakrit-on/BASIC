@@ -1,0 +1,12 @@
+## 4. Program Output (ตัวอย่างผลลัพธ์การรัน 1 กรณี - ใช้ Test Case 1)
+
+**Input:**
+
+3
+30
+1
+
+
+**Program Output:**
+
+Access Granted

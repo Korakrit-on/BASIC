@@ -1,0 +1,101 @@
+## 2. XML Code สำหรับ Draw.io (Flowchart)
+
+
+<mxfile host="app.diagrams.net" modified="2023-10-27T12:00:00.000Z" agent="Mozilla/5.0" etag="ABC-123" version="22.0.4" type="device">
+  <diagram id="flowchart_access_control" name="Access Control Flowchart">
+    <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Start -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+        <!-- Input -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-2" value="Input: Level (L), Age (A), Active (I)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-3" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-1" target="Qk-5j5Fw7V0m7lX9H70a-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="100" as="sourcePoint" />
+            <mxPoint x="420" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Decision 1 (Rule 1A) -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-4" value="L == 3 AND I == 1 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="220" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-5" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-2" target="Qk-5j5Fw7V0m7lX9H70a-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="190" as="sourcePoint" />
+            <mxPoint x="420" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Granted Path 1 -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-6" value="Output: Access Granted" style="shape=process;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="580" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-7" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="260" />
+              <mxPoint x="640" y="380" />
+            </Array>
+            <mxPoint x="640" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Decision 2 (Rule 1B) -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-8" value="L == 2 AND A &amp;ge; 25 AND I == 1 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-9" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-4" target="Qk-5j5Fw7V0m7lX9H70a-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="300" as="sourcePoint" />
+            <mxPoint x="420" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Granted Path 2 -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="410" as="sourcePoint" />
+            <mxPoint x="580" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-11" value="Yes" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="380" width="40" height="20" as="geometry" />
+        </mxCell>
+        <!-- Denied Path -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-12" value="Output: Access Denied" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-13" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-8" target="Qk-5j5Fw7V0m7lX9H70a-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="460" as="sourcePoint" />
+            <mxPoint x="420" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Merge and End -->
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-14" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-6" target="Qk-5j5Fw7V0m7lX9H70a-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="440" as="sourcePoint" />
+            <mxPoint x="420" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="620" />
+              <mxPoint x="420" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-15" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="650" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qk-5j5Fw7V0m7lX9H70a-16" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qk-5j5Fw7V0m7lX9H70a-12" target="Qk-5j5Fw7V0m7lX9H70a-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="580" as="sourcePoint" />
+            <mxPoint x="420" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

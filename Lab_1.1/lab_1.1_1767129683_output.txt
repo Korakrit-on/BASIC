@@ -1,0 +1,10 @@
+### 4. Program Output
+
+(Input: 5)
+
+
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!

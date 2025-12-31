@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowchart>
+    <start>Start</start>
+    <input>Rับค่า N</input>
+    <decision>ตรวจสอบค่า N</decision>
+    <process>ประกาศ Array ของ int ที่มีขนาด N</process>
+    <loop>รับค่าตัวเลขจำนวนเต็ม N ตัว เข้าไปเก็บใน Array ตามลำดับ</loop>
+    <loop>แสดงผลตัวเลขที่เก็บใน Array จากท้ายไปหน้า (ย้อนกลับ)</loop>
+    <end>End</end>
+</flowchart>

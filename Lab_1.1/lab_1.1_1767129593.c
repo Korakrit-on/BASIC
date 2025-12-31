@@ -1,5 +1,3 @@
-1. Source Code (ภาษา C)
-
 
 #include <stdio.h>
 

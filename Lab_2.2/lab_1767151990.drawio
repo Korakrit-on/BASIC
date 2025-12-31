@@ -1,0 +1,41 @@
+<program>
+    <main_function>
+        <variable_declarations>
+            <variable type="int" name="N" />
+            <variable type="int" name="i" />
+            <variable type="int" name="quantity" />
+            <variable type="float" name="unitPrice" />
+            <variable type="float" name="itemCost" />
+            <variable type="float" name="grandTotal" initial_value="0.0" />
+        </variable_declarations>
+        <input_N>
+            <scanf format="%d" variable="N" />
+            <error_check condition="scanf_result != 1" return="1" />
+        </input_N>
+        <loop type="for" counter="i" start="0" end="N-1">
+            <input_unitPrice_quantity>
+                <scanf format="%f" variable="unitPrice" />
+                <error_check condition="scanf_result != 1" return="1" />
+                <scanf format="%d" variable="quantity" />
+                <error_check condition="scanf_result != 1" return="1" />
+            </input_unitPrice_quantity>
+            <calculate_itemCost>
+                <assignment variable="itemCost" expression="unitPrice * quantity" />
+            </calculate_itemCost>
+            <conditional_discount>
+                <if condition="unitPrice >= 1000.00">
+                    <apply_discount>
+                        <assignment variable="itemCost" expression="itemCost * 0.90" />
+                    </apply_discount>
+                </if>
+            </conditional_discount>
+            <accumulate_grandTotal>
+                <assignment variable="grandTotal" expression="grandTotal + itemCost" />
+            </accumulate_grandTotal>
+        </loop>
+        <print_grandTotal>
+            <printf format="Grand Total: %.2f\n" variable="grandTotal" />
+        </print_grandTotal>
+        <return_statement value="0" />
+    </main_function>
+</program>

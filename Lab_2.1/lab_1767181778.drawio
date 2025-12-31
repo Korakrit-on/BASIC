@@ -1,0 +1,81 @@
+<graphml>
+  <key id="d0" for="node" attr.name="label" attr.type="string"/>
+  <key id="d1" for="node" attr.name="style" attr.type="string"/>
+  <key id="d2" for="edge" attr.name="label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="d0">Start</data>
+      <data key="d1">ellipse</data>
+    </node>
+    <node id="n1">
+      <data key="d0">Declare N, i</data>
+      <data key="d1">rectangle</data>
+    </node>
+    <node id="n2">
+      <data key="d0">Read N (scanf("%d", &amp;N))</data>
+      <data key="d1">parallelogram</data>
+    </node>
+    <node id="n3">
+      <data key="d0">scanf("%d", &amp;N) != 1?</data>
+      <data key="d1">diamond</data>
+    </node>
+    <node id="n4">
+      <data key="d0">Return 1</data>
+      <data key="d1">ellipse</data>
+    </node>
+    <node id="n5">
+      <data key="d0">N &lt;= 0?</data>
+      <data key="d1">diamond</data>
+    </node>
+    <node id="n6">
+      <data key="d0">Print "Error\n"</data>
+      <data key="d1">parallelogram</data>
+    </node>
+    <node id="n7">
+      <data key="d0">i = 0</data>
+      <data key="d1">rectangle</data>
+    </node>
+    <node id="n8">
+      <data key="d0">i &lt; N?</data>
+      <data key="d1">diamond</data>
+    </node>
+    <node id="n9">
+      <data key="d0">Print "Hello Loop!\n"</data>
+      <data key="d1">parallelogram</data>
+    </node>
+    <node id="n10">
+      <data key="d0">i++</data>
+      <data key="d1">rectangle</data>
+    </node>
+    <node id="n11">
+      <data key="d0">Return 0</data>
+      <data key="d1">ellipse</data>
+    </node>
+
+    <edge source="n0" target="n1"/>
+    <edge source="n1" target="n2"/>
+    <edge source="n2" target="n3"/>
+    <edge source="n3" target="n4">
+      <data key="d2">Yes</data>
+    </edge>
+    <edge source="n3" target="n5">
+      <data key="d2">No</data>
+    </edge>
+    <edge source="n5" target="n6">
+      <data key="d2">Yes</data>
+    </edge>
+    <edge source="n5" target="n7">
+      <data key="d2">No</data>
+    </edge>
+    <edge source="n7" target="n8"/>
+    <edge source="n8" target="n9">
+      <data key="d2">Yes</data>
+    </edge>
+    <edge source="n9" target="n10"/>
+    <edge source="n10" target="n8"/>
+    <edge source="n6" target="n11"/>
+    <edge source="n8" target="n11">
+      <data key="d2">No</data>
+    </edge>
+  </graph>
+</graphml>

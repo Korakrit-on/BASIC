@@ -1,0 +1,34 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<flowchart>
+    <start>Start</start>
+    <input>Read customerType and consumption_kWh</input>
+    <decision>customerType == 1?</decision>
+    <if_true_1>
+        <decision>consumption_kWh <= 100?</decision>
+        <if_true_2>
+            <process>totalBill = consumption_kWh * 3.0</process>
+        </if_true_2>
+        <if_false_2>
+            <process>totalBill = consumption_kWh * 4.0</process>
+        </if_false_2>
+    </if_true_1>
+    <if_false_1>
+        <decision>customerType == 2?</decision>
+        <if_true_3>
+            <decision>consumption_kWh <= 500?</decision>
+            <if_true_4>
+                <process>totalBill = consumption_kWh * 5.0</process>
+            </if_true_4>
+            <if_false_4>
+                <process>totalBill = consumption_kWh * 6.5</process>
+            </if_false_4>
+        </if_true_3>
+        <if_false_3>
+            <process>Print "Invalid Customer Type"</process>
+        </if_false_3>
+    </if_false_1>
+    <output>Print totalBill</output>
+    <end>End</end>
+</flowchart>
+```

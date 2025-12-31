@@ -1,0 +1,64 @@
+<program description="BASIC Computer Programming - Lab 2.1">
+  <task>
+    <title>Hello Loop!</title>
+    <description>
+      Write a C program to read an integer N from the user.
+      The program should then print the message "Hello Loop!" N times,
+      with each message on a new line.
+      If N is less than or equal to 0, print "Error".
+    </description>
+  </task>
+  <pre_code>
+    <line>int main() {</line>
+    <line>    int N, i;</line>
+    <line>    </line>
+    <line>    </line>
+    <line>    if (scanf("%d", &amp;N) != 1) {</line>
+    <line>        return 1; </line>
+    <line>    }</line>
+    <line>    </line>
+    <line>    </line>
+    <line>    return 0;</line>
+    <line>}</line>
+  </pre_code>
+  <solution_added_logic>
+    <conditional_check expression="N &lt;= 0">
+      <true_branch>
+        <action>Print "Error"</action>
+      </true_branch>
+      <false_branch>
+        <loop type="for" iterations="N">
+          <action>Print "Hello Loop!" followed by a newline</action>
+        </loop>
+      </false_branch>
+    </conditional_check>
+  </solution_added_logic>
+  <test_cases>
+    <test_case id="1">
+      <input>3</input>
+      <output>
+        Hello Loop!
+        Hello Loop!
+        Hello Loop!
+      </output>
+    </test_case>
+    <test_case id="2">
+      <input>5</input>
+      <output>
+        Hello Loop!
+        Hello Loop!
+        Hello Loop!
+        Hello Loop!
+        Hello Loop!
+      </output>
+    </test_case>
+    <test_case id="3">
+      <input>0</input>
+      <output>Error</output>
+    </test_case>
+    <test_case id="4">
+      <input>-2</input>
+      <output>Error</output>
+    </test_case>
+  </test_cases>
+</program>

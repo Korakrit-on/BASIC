@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowchart>
+    <start>เริ่มต้น</start>
+    <input>รับข้อมูลอุณหภูมิ</input>
+    <loop>วนซ้ำการรับข้อมูล 7 ครั้ง</loop>
+    <find_max>หาอุณหภูมิสูงสุด</find_max>
+    <output>แสดงผลลัพธ์</output>
+    <condition>ตรวจสอบอุณหภูมิสูงสุด</condition>
+    <hot>แสดงข้อความ "Weather is HOT!"</hot>
+    <moderate>แสดงข้อความ "Weather is MODERATE."</moderate>
+    <end>สิ้นสุด</end>
+</flowchart>

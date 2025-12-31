@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowchart>
+    <start>Start</start>
+    <input>Input N</input>
+    <decision>Is N valid?</decision>
+    <loop>Loop N times</loop>
+    <input>Input item name, unit price, and quantity</input>
+    <process>Calculate item cost and update subtotal</process>
+    <output>Print item details</output>
+    <decision>End of loop?</decision>
+    <process>Calculate VAT and grand total</process>
+    <output>Print subtotal, VAT, and grand total</output>
+    <end>End</end>
+</flowchart>

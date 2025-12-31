@@ -1,0 +1,9 @@
+Step,Variable N,Variable i,Condition (N <= 0),Output
+1,N (uninitialized),i (uninitialized),N/A,
+2,Input: 3,i (uninitialized),N/A,
+3,3,i (uninitialized),FALSE,
+4,3,0,N/A,Hello Loop!
+5,3,1,N/A,Hello Loop!
+6,3,2,N/A,Hello Loop!
+7,3,3,N/A,
+8,3,3,N/A,Program Ends
